@@ -27,6 +27,18 @@
         "ja": "(スマホ用)簡易編集ツール",
         "en": "(for smartphone)simple editing tool"
     },
+    "search_twitter_osaka_yell_food": {
+        "ja": "(検索 twitter)大阪エール飯",
+        "en": "(search twitter)osaka yell food"
+    },
+    "search_instagram_osaka_yell_food": {
+        "ja": "(検索 instagram)大阪エール飯",
+        "en": "(search instagram)osaka yell food"
+    },
+    "search_facebook_osaka_yell_food": {
+        "ja": "(検索 facebook)大阪エール飯",
+        "en": "(search facebook)osaka yell food"
+    },
     "outdoor_seating_yes": {
         "ja": "(テラスあり)",
         "en": "(outdoor seats)"
