@@ -212,9 +212,16 @@ var Takeaway = (function () {
                     $("#" + key).show();
                 };
             });
-
-            $("#description").html(tags.description == null ? "-" : tags.description);
-
+            
+            let description;
+            if (tags.description == null) {
+                description = "-";
+            } else {
+                let re = new RegExp("(\\s+\;\\s+|\\s+\;|\;\\s+|\;)", "g");
+                description = tags.description.replace(re,"<br>");
+            }
+            $("#description").html(description);
+            //$("#description").html(tags.description == null ? "-" : tags.description);
             glot.render();
             $('#PoiView_Modal').modal({ backdrop: 'static', keyboard: true });
 
