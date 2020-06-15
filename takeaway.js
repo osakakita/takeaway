@@ -262,6 +262,13 @@ var Takeaway = (function () {
             $("#description").html(add_html + description);
             //$("#description").html(tags.description == null ? "-" : tags.description.trim());
             
+            if (tags.amenity && tags.amenity == "library") {
+                $("#modal_notice").attr("glot-model", "modal_notice");
+            } else {
+            	$("#modal_notice").removeAttr("glot-model");
+            	$("#modal_notice").html("");
+            }
+            
             glot.render();
             $('#PoiView_Modal').modal({ backdrop: 'static', keyboard: true });
 
